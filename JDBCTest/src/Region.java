@@ -1,37 +1,41 @@
-public class Region {
-    private int region_id;
-    private String region_name;
-  
-    public Region(){
-  
+public class Region  {
+    // Encapsulation Part
+    private int regionDd;
+    private String regionName;
+    private String negara;
+
+    public Region(int regionDd, String regionName, String negara) {
+        this.regionDd = regionDd;
+        this.regionName = regionName;
+        this.negara = negara;
     }
 
-    public Region(int region_id, String region_name) {
-        this.region_id = region_id;
-        this.region_name = region_name;
+    public int getRegionDd() {
+        return regionDd;
     }
 
-    public int getRegion_id() {
-        return region_id;
+    public void setRegionDd(int regionDd) {
+        this.regionDd = regionDd;
     }
 
-    public void setRegion_id(int region_id) {
-        this.region_id = region_id;
+    public String getRegionName() {
+        return regionName;
     }
 
-    public String getRegion_name() {
-        return region_name;
+    public void setRegionName(String regionName) {
+        this.regionName = regionName;
     }
 
-    public void setRegion_name(String region_name) {
-        this.region_name = region_name;
+    public String getNegara() {
+        return negara;
     }
-  
-    
-    
 
+    public void setNegara(String negara) {
+        this.negara = negara;
+    }
 
    
-  
+    
+    
   
 }
